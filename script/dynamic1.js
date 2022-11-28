@@ -1,0 +1,1 @@
+alert("internal script added in head of web page.");

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>សៀវភៅរូបថត</title>
+    <link rel="stylesheet" href="css/photo album.css">
+    <style type="text/css">
+        html{font-family:'Khmer OS Siemreap';}
+        ul{background-color:pink;}
+        li{display:inline;}
+        a{display: inline-block; text-decoration:none; padding: 8px 16px;}
+        #active{background-color: blue; color: white; border-radius: 5px;}
+    </style>
+</head>
+<body>
+    <ul class="hmenu"><!--horizontal menu-->
+        <li><a href="../index.html">ទំព័រដើម</a></li>
+        <li><a href="head and text.html">ចំណងជើងនិងអត្ថបទ</a></li>
+        <li><a href="formating text.html">ទ្រង់ទ្រាយអត្ថបទ</a></li>
+        <li><a href="list.html">បញ្ជី</a></li>
+        <li><a id="active" href="#">សៀវភៅរូបថត</a></li>
+        <li><a href="Table.html">តារាង</a></li>
+        <li><a href="form.html">សំណុំបែបបទ</a></li>
+    </ul>
+    <h1>សៀវភៅរូបថតសាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ</h1>
+    <div class="cover">
+    <img id="feature" src="image/RUPP 1.jpg" alt="building A">
+    <p id="caption">Building A</p>
+    <u1 class="album">
+        <li><img src="image/RUPP 1.jpg" width="700" height="400" alt="Building A"></li>
+        
+        <li><img src="image/RUPP 2.jpg" width="800" height="500" alt="Boat building"></li>
+        
+        <li><img src="image/RUPP 3.jpg" width="700" height="500" alt="building IFL"></li>
+        
+        <li><img src="image/RUPP 4.jpg" width="700" height="500" alt="Building CKCC"></li>
+    
+        <li><img src="image/RUPP 5.jpeg" width="700" height="600" alt="Building CJCC"></li>
+        
+    </u1>
+    <!-- <p id="dynamic" style="font: 24px times; background:yellow;"></p> -->
+    </div>
+    <!--<a href="../index.html">back</a>-->
+    <script>
+    /*
+    let feature=document.querySelector("#feature");
+    let dynamic=document.querySelector("#dynamic");
+    dynamic.textContent=feature.getAttribute("src");
+    let imgs=document.querySelectorAll(".album img");
+    //length ជា property ប្រាប់ចំនួនធាតុមាននៅក្នុង Array //innerhtml allow us to write text, simple code ,or any html's elements
+    dynamic.textContent=imgs.length;
+    dynamic.textContent=imgs[2].getAttribute("alt");
+    let i;
+    for(i=0; i<5; i++)
+    dynamic.innerHTML=dynamic.innerHTML + "<br>" + imgs[i].getAttribute("src");
+   // parameter 1 : jea element , parameter 2: jea lek array , parameter 3: jea 
+   imgs.forEach(function(img){
+        dynamic.innerHTML=dynamic.innerHTML + "<hr>" + img.getAttribute("alt");
+   })*/
+    /*ដូរការរចនាធាតុបានជ្រើស
+     អថេរតាងធាតុ style.property="value";
+    Ex: 1 ដូរ border ដាក់តម្លៃ 5px solid red
+    //property មាន១ពាក្យសរសេរធម្មតា
+    feature.style.border="5px solid red";
+    Ex: 2 ដូរ border-left ដាក់តម្លៃ 5px solid red 
+    //property មានច្រើនពាក្យលុបសញ្ញា - ហើយអក្សរខាងស្ដាំសញ្ញា - ដូរជាអក្សរធំ 
+    feature.style.borderLeft="5px soldi red ";
+    <!-- រើសធាតុមុយដែលមានឌីសម្គាល់ feature document.getElementById("feature")ជ្រើរើសធាតុទាំងឡាយណាដែលមានថ្នាក់សម្គាល់ next-image 
+         document.getElementsByName("next-image") ជ្រើរើសធាតុគុណលក្ខណះ name មានតម្លៃ img-feature document.getElementsByName("img-feature")
+         ជ្រើរើសធាតុ img ទាំងអស់ document.getElementsByTagName("img")
+         ជ្រើសធាតុណាមួយដូចដែលបានបញ្ជាក់ដោយ css selector document.querySelector("CSS-selector")
+         ជ្រើសធាតុទាំងឡាយដូចដែលបានបញ្ជាក់ដោយ CSS selector document.querySelectorALL("CSS-selector")
+         ទាញយកតម្លៃគុណលក្ខណះនៃធាតុបានជ្រើសរើស អថេតំណាងធាតុ .getAttribute("ឈ្មោះគូណលក្ខណះ")
+         ដាក់តម្លៃថ្មីឲគុណលក្ខណះនៃធាតុដែលបានជ្រើសរើស
+         អថេតំណាងធាតុ .setAttribute("ឈ្មោះគុណលក្ខណះ"";"តម្លៃថ្មី") 
+         innerHTML យើងសរសេរ code ធម្មតាក៏បាន សរសេរកូដធាតុរបស់HTML ក៏បាន*/
+
+   let imgs=document.querySelectorAll(".album img");
+    let feature=document.querySelector("#feature");
+    let caption=document.querySelector("#caption");
+    let i=1;
+    window.setInterval(function(){
+        if(i==0)
+            document.querySelector(".album li:nth-child(5)").style.borderLeft="none";
+        else
+            document.querySelector(".album li:nth-child("+i+")").style.borderLeft="none";
+        caption.textContent=imgs[i].getAttribute("alt");
+        feature.setAttribute("src",imgs[i++].getAttribute("src"));
+        document.querySelector(".album li:nth-child("+i+")").style.borderLeft="2px solid red";
+        if(i==5){i=0};
+    },3000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+/*
+photo albums style
+*/
+.cover{
+    width: 502px;
+    margin: 16px,auto;
+}
+#feature{
+    width: 500px;
+    height: 350px;
+    border: 1px solid black;
+}
+.album img{
+    width: 100px;
+    height: 55px;
+}
+.album li{
+    display: inline-block;
+}
+#caption{
+    background: yellow;
+    padding-left: 0px;
+    text-align: center;
+    margin-top: -29px;
+}
+.album li:nth-child(n+2) {
+    margin-left: 5px;
+}
+.album li:nth-child(1){
+    border-left: 3px solid red;
+}
+.album {
+    padding-left: 0px;
+    /* border-top: 3px solid black; */
+}

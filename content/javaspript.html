@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add javascript to web page</title>
+    <!-- inline script សរសេរ javascript ក្នុងស្លាកបើក គឺ event="statemrnt(s)" -->
+    <!-- internal script ប្រើធាតុ script សរសេរ javascript ក្នុងធាតុ head or body -->
+    <!-- external script ប្រើធាតុ script សរសេរ javascript ក្នុងធាតុ head or body តែគុណលក្ខណះ src បញ្ចាក់អាស័យដ្ឋា​នរបស់ javascript file -->
+    <!-- <script type="text/javascript"> 
+    alert("internal script added in head of web page.");
+    </script>
+    -->
+    <script type="text/javascript" src="../script/dynamic1.js"> 
+        
+        </script>
+
+</head>
+<body onload="alert('inline script!');">
+    <!-- onload ជា​ event រីអែល alert អាចប្រើក្នុង javascript ដើម្បីជូនដំណឹងទៅអ្នកប្រើ -->
+
+    <script type="text/javascript"> 
+        alert("internal script added at bittom of body.");
+        </script> 
+        <script type="text/javascript" src="../script/dynamic2.js"> 
+        
+        </script>
+</body>
+</html>

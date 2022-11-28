@@ -1,0 +1,42 @@
+.li {
+    float: left;
+}
+
+.cover {
+    width: 502px;
+    margin: 16px;
+}
+
+#feature {
+    width: 500px;
+    height: 350px;
+    border: 1px solid black;
+}
+
+#caption {
+    background-color: yellow;
+    padding-left: 0;
+    text-align: center;
+    margin-top: -29px;
+}
+
+.album {
+    padding-left: 0;
+}
+
+.album li {
+    display: inline-block;
+}
+
+.album li:nth-child(n+2) {
+    margin-left: 5px;
+}
+
+.album li:nth-child(1) {
+    border-left: 3px solid red;
+}
+
+.album img {
+    width: 92px;
+    height: 55px;
+}

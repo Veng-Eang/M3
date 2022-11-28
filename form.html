@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="kh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>សំណុំបែបបទ</title>
+    <link rel="stylesheet" href="../style/default.css">
+    <style type="text/css">
+        html{font-family:'Khmer OS Siemreap';}
+        ul{background-color:pink;}
+        li{display:inline;}
+        a{display: inline-block; text-decoration:none; padding: 8px 16px;}
+        #active{background-color: blue; color: white; border-radius: 5px;}
+    </style>
+   
+</head>
+<body>
+    <fieldset style="background-color:white ;">
+    <ul class="hmenu"><!--horizontal menu-->
+        <li><a href="../index.html">ទំព័រដើម</a></li>
+        <li><a href="head and text.html">ចំណងជើងនិងអត្ថបទ</a></li>
+        <li><a href="formating text.html">ទ្រង់ទ្រាយអត្ថបទ</a></li>
+        <li><a href="list.html">បញ្ជី</a></li>
+        <li><a href="photo album.html">សៀវភៅរូបថត</a></li>
+        <li><a href="Table.html">តារាង</a></li>
+        <li><a href="#">សំណុំបែបបទ</a></li>
+    </ul><br>
+     <!--<span>span 1</span>
+    <span>span 2</span>
+    <p>p1</p><p>2</p>-->
+
+<form action="អាស័យដ្ឋានអ្នកទទួល" method="get">
+    <h2>សំណុំបែបបទ form</h2>
+    <div>
+        <label for="txt">Surname</label>
+        <input type="text" id="txt" name="txt">
+    </div>
+    <div>
+        <label for="pwd">Password</label>
+        <input type="Password" id="pwd" name="pwd">
+    </div>
+    <div>
+        <label for="ddl">Sex</label>
+        <select id="ddl" name="ddl">
+            <option value="1">Male</option>
+            <option value="2">Female</option>
+            
+        </select>
+    </div>
+    <div>
+        <label for="lst">ឈ្មោះស្ថាប័ន</label>
+        <select id="lst" name="lst">
+        <option value="0">select your university</option>
+        <option value="1">សកលវិទ្យាល័យភូមិន្ទភំ្នពេញ</option>
+        <option value="2">សកលវិទ្យាល័យន័រតុន</option>
+        <option value="3">សកលវិទ្យាល័យជាតិគ្រប់គ្រង</option>
+        </select>
+    </div>
+    <div>
+        <h5>Please input your major</h5>
+        <label for="chk1">IT</label>
+        <input type="checkbox" value="c1" id="chk1" name="chk1">
+        <label for="chk2">Accounting</label>
+        <input type="checkbox" value="c2" id="chk2" name="chk2">
+        <label for="chk3">Marketing</label>
+        <input type="checkbox" value="c3" id="chk3" name="chk3">
+    </div>
+    <div>
+        <label for="rdo1">Year1</label>
+        <input type="radio" value="rdo1" name="rdo" id="rdo1">
+        <label for="rdo2">Year2</label>
+        <input type="radio" value="rdo2" name="rdo" id="rdo2">
+        <label for="rdo3">Year3</label>
+        <input type="radio" value="rdo3" name="rdo" id="rdo3">
+        <label for="rdo4">Year4</label>
+        <input type="radio" value="rdo4" name="rdo" id="rdo4">
+    </div>
+    <div>
+        <input class="ibutton" type="button" name="btn" id="btn" value="បូតុង button">
+        <input class="ibutton" type="reset" name="rst" id="rst" value="សាថ្មី reset">
+        <input class="ibutton" type="submit" name="smt" id="smt" value="បញ្ចូន submit">
+    </div>
+    </form>
+</fieldset>
+</body>
+</html>

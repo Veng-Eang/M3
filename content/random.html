@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+    #rnd{
+        font:32px Time,serif;
+        display:block;
+        background-color: greenyellow;
+        padding: 48px 32px; margin: 32px auto;
+        width: 64px;height: 32px;
+        border: 1px solid gray;border-radius: 50%;text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <span id="rnd">15</span>
+    <script type="text/javascript">
+        //   window.setInterval(function(){document.getElementById("rnd").textContent=Math.floor(Math.random()*10)+5},1000);
+    window.setInterval(function(){
+        document.getElmentById("rnd").textContent=Math.floor(Math.random()*10)+5;
+    },1000);
+    
+    </script>
+</body>
+</html>

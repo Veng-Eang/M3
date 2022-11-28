@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.css">
+    <title>Bootstrap form</title>
+</head>
+<body>
+    <h1 class="text-center">Bootstrap form</h1>    
+        <form >
+            <div>
+                <label for="txt" class="form-label">Text box</label>
+                <input type="text" id="txt" name="txt" class="form-control mb-3">
+            </div>
+            <div>
+                <label for="txt" class="form-label">Text box</label>
+                <input type="password" id="pwd" name="pwd" class="form-control mb-3">
+            </div>
+            <div>
+                <label for="txs" class="form-label">Text box</label>
+                <textarea id="txs" name="txts" class="form-control mb-3"></textarea>
+            </div>
+            <div>
+                <label for="lst" class="form-label">List Box</label>
+                <select name="lst"  id="lst" class="form-select" multiple>
+                    <option>
+                        choice 1
+                    </option>
+                    <option>
+                        choice 2
+                    </option>
+                </select>
+            </div>
+            <div>
+                <label for="ddl" class="form-label">Drop down list</label>
+                <select name="ddl" id="ddl" class="form-select">
+                    <option>choice 1</option>
+                    <option>choice 2</option>
+                </select>
+            </div>
+            <!--defaul check boxs-->
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="chk1" name="chk1">
+                <label for="chk1" class="form-check-label" >check 1</label>
+            </div>
+            <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="chk2" name="chk2">
+                <label for="chk2" class="form-check-label" >check 2</label>
+            </div>
+            <!--defaul radio-->
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="rdo1" name="rdo1">
+                <label for="rdo1" class="form-check-label" >radio 1</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="rdo2" name="rdo2">
+                <label for="rdo2" class="form-check-label" >radio 2</label>
+            </div>
+            <div></div>
+            <!--inline radio-->
+            <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" id="rdo3" name="rdo3">
+                <label for="rdo3" class="form-check-label" >radio 3</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input type="radio" class="form-check-input" id="rdo4" name="rdo4">
+                <label for="rdo4" class="form-check-label" >radio 4</label>
+            </div>
+        </form>
+
+    <script src="script/bootstrap/bootstrap.bundle.js"></script>
+</body>
+</html>
