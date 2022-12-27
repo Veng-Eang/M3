@@ -1,0 +1,28 @@
+<?xml version="1.0"?><!--Prolog or cnl declaration-->
+<?xml-stylesheet type="text/css" href="../style/PA.css"?>
+<students>
+<student studentid="101" classid="3">
+    <studentnamekh></studentnamekh>
+    <studentnamelt>oeng vengeang</studentnamelt>
+    <present>27</present>
+    <absent>0</absent>
+</student>
+<student studentid="102" classid="3">
+    <studentnamekh></studentnamekh>
+    <studentnamelt>oeng vengeang</studentnamelt>
+    <present>27</present>
+    <absent>0</absent>
+</student>
+<student studentid="103" classid="3">
+    <studentnamekh></studentnamekh>
+    <studentnamelt>oeng vengeang</studentnamelt>
+    <present>27</present>
+    <absent>0</absent>
+</student>
+<student studentid="104" classid="3">
+    <studentnamekh></studentnamekh>
+    <studentnamelt>oeng vengeang</studentnamelt>
+    <present>27</present>
+    <absent>0</absent>
+</student>
+</students>

@@ -1,0 +1,22 @@
+students{
+    padding: 16px;
+}
+student{
+    margin: 4px;
+    padding: 4px;
+    display: block;
+    background-color: lightgray;
+    border-radius: 4px;
+
+}
+present,absent{
+    display: inline-block;
+    width: 24px;
+    border-radius: 50%;
+}
+present{
+    background-color: greenyellow;
+}
+absent{
+    background-color: red;
+}
